@@ -21,5 +21,19 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
+print("Your mission is to find the treasure.")
 
+left_or_right = input("left or right?")
+swim_or_wait = input("swim or wait?")
+which_door = input("which door?")
+
+if left_or_right == "left":
+    if swim_or_wait == "wait":
+        if which_door == "yellow":
+            print("You win!")
+        else:
+            print("game over!")
+    else:
+        print("game over!")
+else:
+    print("game over!")
